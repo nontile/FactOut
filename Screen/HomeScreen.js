@@ -5,6 +5,7 @@ function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>
+      <Button title="Go to Details" onPress={() => navigation.navigate('Details')} />
     </View>
   );
 }
