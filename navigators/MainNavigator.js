@@ -1,29 +1,34 @@
 import React from 'react';
-import { Button} from 'react-native';
+import { Text, View ,TouchableOpacity} from 'react-native';
 // import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from "../Screen/HomeScreen";
 import DetailScreen from "../Screen/DetailScreen";
+import Icon from 'react-native-vector-icons/Feather';
+
 
 const Stack = createStackNavigator();
 
 const MainNavigator = ({navigation}) => (
-    // <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={HomeScreen} 
+          <Stack.Screen name="Home" component={HomeScreen}
             options={{
-              title: 'Overview',
+              title: 'FaceOut',
+              headerTitleStyle: {
+                alignSelf: 'center',
+              },
               headerLeft: () => (
-                <Button
-                  onPress={() => navigation.toggleDrawer()}
-                    title="drawer"
-                />
+                <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
+                   <Icon style = {{paddingLeft : 20}} name="menu" size={24} color="#000" />
+                 </TouchableOpacity> 
               ),
+              headerRight: () =>(<View />)
             }}
             />
+            
           <Stack.Screen name="Details" component={DetailScreen} />
         </Stack.Navigator>
-    //   </NavigationContainer>
+
 
 )
 
