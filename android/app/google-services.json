@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "561518962518",
+    "project_id": "faceout-2ed72",
+    "storage_bucket": "faceout-2ed72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561518962518:android:238a0fc9b97799c5b058f7",
+        "android_client_info": {
+          "package_name": "com.jsoone.faceout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561518962518-25etamb6mpls35vch701f5g5jvrktg98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr6lM5F4vX6gyXqjHEgo_qhY0CKbwXIoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561518962518-25etamb6mpls35vch701f5g5jvrktg98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
